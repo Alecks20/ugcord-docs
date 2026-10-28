@@ -89,7 +89,7 @@
 <hr>
 
 <h2>1. Who runs this instance</h2>
-<p>ugcord is self-hosted and operated by ugdc, which is run by @alecks. The platform, including all accounts, messages, files and the voice and video servers, runs on privately owned hardware and infrastructure in Perth, Western Australia. A virtual server rented from BinaryLane, an Australian hosting provider, acts as a network relay for voice and video traffic. No other person or organization has administrative access to our servers or their stored data. Cloudflare and BinaryLane handle traffic in transit (see section 5).</p>
+<p>ugcord is self-hosted and operated by ugdc, which is run by @alecks. It runs on privately owned hardware and infrastructure in Perth, Western Australia. It is not hosted on a third-party cloud provider, and no other person or organization has administrative access to the server or its data.</p>
 
 <h2>2. Information we collect</h2>
 
@@ -118,7 +118,7 @@
 </ul>
 
 <p class="sub">Voice and video</p>
-<p>Real-time voice and video are transmitted between participants through our own voice servers, via a relay server rented from BinaryLane (see section 5). <strong>They are not recorded or stored</strong> by this instance.</p>
+<p>Real-time voice and video are transmitted between participants and are <strong>not recorded or stored</strong> by this instance.</p>
 
 <h2>3. How we use your information</h2>
 <ul>
@@ -142,12 +142,10 @@
   <li>you ask us to (for example, a data export).</li>
 </ul>
 <p><strong>Third parties:</strong> This instance does not use third-party analytics or advertising services. Some features may involve third parties you or other users interact with, for example if a user posts a link or embed to an external site, your browser may contact that site when it loads.</p>
-<p><strong>Cloudflare:</strong> We route the core platform through Cloudflare, which provide DDoS protection, CDN and network transit. This means traffic, including IP addresses and message content in transit, passes through Cloudflare&rsquo;s systems and is subject to <a href="https://www.cloudflare.com/privacypolicy/" rel="noopener">Cloudflare&rsquo;s privacy policy</a>. We don&rsquo;t control how Cloudflare handles that data.</p>
-<p><strong>BinaryLane:</strong> We use a virtual server rented from BinaryLane as a network relay (proxy) for voice and video traffic. When you join a voice channel, your IP address and your real-time audio and video pass through that relay on the way to our voice servers. We do not record or store voice or video, and no accounts, messages or files are stored on the relay, but BinaryLane operates the underlying infrastructure and is subject to <a href="https://www.binarylane.com.au/legal/privacy-policy" rel="noopener">BinaryLane&rsquo;s privacy policy</a>.</p>
+<p>While we depend on our upstream network provider for connectivity, data is e2e encrypted between ugdc servers and your client in transit meaning no third party can intercept or read that data.</p>
 
 <h2>6. Data storage, location and security</h2>
-  
-<p>Data is stored on hardware physically located in Perth, Western Australia. We take reasonable steps to protect it including strict firewalls and access controls, VLAN segmentation, SSH login alerts and keeping systems up to date.</p>
+<p>Data is stored on hardware physically located in Perth, Western Australia. We take reasonable steps to protect it, including backups, Cloudflare (DDoS protection, network transit), strict firewalls and access controls, VLAN segmentation and SSH login alerts.</p>
 <p><strong>Backups:</strong> We keep local and offsite backups. Offsite backups are stored at another privately owned location, not on public cloud.</p>
 <p>No system is perfectly secure, and we cannot guarantee absolute security. If we become aware of a breach that is likely to cause you serious harm, we will notify affected users as soon as reasonably possible.</p>
 
